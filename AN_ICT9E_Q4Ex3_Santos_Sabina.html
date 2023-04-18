@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+			background-color: #403F47;
+		}
+		p{
+			font-size: 30px;
+		}
+		.container{
+			padding: 35px;
+		}
+		li{
+			font-size: 30px;
+		}
+	</style>
+	<title>Q4 Exercise 3</title>
+</head>
+<div class="container" style="background-color: #F5F5F5;">
+<body>
+	<h1 style="background-color: #D2AE90; color: white; text-align: center;">JavaScript Arithmetic Operators</h1>
+	<p><mark>x = 10, y = 5</mark></p>
+	<ol type="1.">
+		<li>x + y = <strong id="p1"></strong></li>
+		<li>x - y = <strong id="p2"></strong></li>
+		<li>x * y = <strong id="p3"></strong></li>
+		<li>x / y = <strong id="p4"></strong></li>
+		<li>x % y = <strong id="p5"></strong></li>
+	</ol>
+
+	<script>
+
+		let x=10, y=5; //variable declaration;assignment of values 
+
+		document.getElementById("p1").innerHTML = x + y;
+		document.getElementById("p2").innerHTML = x - y;
+		document.getElementById("p3").innerHTML = x * y;
+		document.getElementById("p4").innerHTML = x / y;
+		document.getElementById("p5").innerHTML = x % y;
+
+	</script>
+
+</body>
+</div>
+</html>
