@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Merriweather&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background: url("https://wallpaperboat.com/wp-content/uploads/2020/12/06/63211/time-26.jpg");
+		}
+		h1, h5{
+			font-family: Merriweather;
+		}
+		p, form{
+			font-size: 28px;
+		}
+		.container{
+			padding: 40px;
+			margin: 50px;
+		}
+	</style>
+	<title>Q4 Exercise 4</title>
+</head>
+<body>
+	<center><div class="container" style="background-color: #F5F5F5;">
+	<h1 style="background-color: #D2AE90; color: white; text-align: center;">Hours to Minutes Converter</h1>
+	<h5 style="text-align: center;">- Use this program to convert hours to minutes.</h5><br>
+
+	<center><form>
+		Enter The Number of Hours to Convert : <input type="text" id="num1"><br><br>
+		<button type="submit" onclick="Compute()">Convert</button>
+	</form></center>
+
+		<script type="text/javascript">
+			function Compute(){
+				let num1 = document.getElementById("num1").value;
+				let product = (num1 * 60);
+			
+				window.alert("The Time in Minutes is: " + product);
+			}
+		</script>
+
+	</div></center>
+</body>
+</html>
