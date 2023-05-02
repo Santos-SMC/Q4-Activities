@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Elsie&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background: url("https://wallpaperboat.com/wp-content/uploads/2020/12/06/63211/time-26.jpg");
+		}
+		h1, h5, h6{
+			font-family: Elsie;
+		}
+		h1{
+			font-size: 45px;
+		}
+		h5{
+			font-size: 22px;
+		}
+		form{
+			font-family: Roboto Slab;
+			font-size: 26px;
+		}
+		button{
+			font-size: 22px;
+		}
+		p{
+			font-family: Roboto Slab;
+			font-size: 19px;
+		}
+		.container{
+			padding: 40px;
+			margin: 50px;
+		}
+	</style>
+	<title>Q4 Seatwork 2</title>
+</head>
+<body>
+	<center><div class="container" style="background-color: #F5F5F5;">
+	<p id="DT"></p>
+
+	<script>
+		const D = new Date();
+		document.getElementById('DT').innerHTML = D;
+	</script>
+
+	<h1 style="background-color: #875336; color: white; text-align: center;">Temperature Conversion: °F to °C</h1>
+	<br>
+	<center><form>
+		Convert °F to °C <input type="text" id="num1"><br><br>
+		<button type="submit" onclick="Compute()">Convert</button>
+	</form></center>
+
+		<script type="text/javascript">
+			function Compute(){
+				let num1 = document.getElementById("num1").value;
+				let celsius = (num1 - 32) * 5/9;
+			
+				window.alert("The Value in °C is: " + celsius);
+			}
+		</script>
+
+	<br>
+	<hr>
+	<h5>If the Conversion = (value in °C), = (Temperature Description)</h5>
+	<p>-273.15 °C = Absolute Zero <br> 0 °C = Freezing/melting point of water <br> 21 °C = Room Temperature <br> 37 °C = Average body temperature <br> 100 °C = Boiling point of water</p>
+
+	<br>
+	<footer>
+	<h6>&copy; SMCSantos 2023</h6>
+	</footer>
+
+	</div></center>
+</body>
+</html>
